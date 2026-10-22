@@ -4,6 +4,6 @@
      Publishable key  (or the older "anon" key). It is safe to be public.
    NEVER paste the "secret" or "service_role" key here. */
 window.APP_CONFIG = {
-  supabaseUrl: "PASTE_PROJECT_URL_HERE",
-  supabaseKey: "PASTE_PUBLISHABLE_OR_ANON_KEY_HERE"
+  supabaseUrl: "https://qnjfftxfbbwpcizfajuh.supabase.co",
+  supabaseKey: "sb_publishable_79BOuB0Ha7qjyUBKQKT4zQ_qssNgegT"
 };
