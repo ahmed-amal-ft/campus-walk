@@ -185,6 +185,7 @@ input[type=range]{width:100%;accent-color:var(--accent);height:28px}
 .lmchip strong{flex:1;font-weight:600;font-size:14px}
 .sw{width:14px;height:4px;border-radius:2px;display:inline-block}
 .sw.dot{width:10px;height:10px;border-radius:50%}
+.mt-grid .mapwrap,.mt-panel{scroll-margin-top:72px}.mt-panel .item,.mt-panel .row,.mt-panel .row .btn{scroll-margin-top:80px;scroll-margin-bottom:120px}
 .mt-panel{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:18px;display:flex;flex-direction:column;gap:14px;min-width:0}
 .mt-panel h3{font-family:var(--f-display);font-weight:600;font-size:1.3rem;line-height:1.2;text-wrap:balance}
 .hint{font-size:13.5px;color:var(--muted)}
@@ -716,7 +717,7 @@ function makeMapTask(q,store,changed){
   }catch(e){M=fresh();}}}
   const trip=()=>M.trips[M.t];
   let focusTo=null;
-  function jump(el){if(!el||!matchMedia('(max-width:900px)').matches)return;requestAnimationFrame(()=>el.scrollIntoView({behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth',block:'start'}));}
+  function jump(el,block){if(!el||!matchMedia('(max-width:900px)').matches)return;requestAnimationFrame(()=>el.scrollIntoView({behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth',block:block||'start'}));}
   function resetTrip(tr){tr.origin=null;tr.dest=null;tr.path=[];M.phase='origin';M.msg='';}
   const pNode=id=>id&&PLACE[id]?PLACE[id].node:null;
   const endNode=tr=>tr.path.length?tr.path[tr.path.length-1].to:pNode(tr.origin);
@@ -734,9 +735,9 @@ function makeMapTask(q,store,changed){
   Object.entries(H.segG).forEach(([id,g])=>g.addEventListener('click',()=>{if(VP.moved())return;tapSeg(id);}));
   Object.entries(H.lmG||{}).forEach(([id,g])=>g.addEventListener('click',()=>{if(VP.moved()||M.phase!=='landmarks')return;tapLm(id);}));
   function tapLm(id){const tr=trip();const i=tr.landmarks.indexOf(id);
-    if(i>=0)tr.landmarks.splice(i,1);else{if(tr.landmarks.length>=maxLm){M.msg=fmt(T.map_lmMax,{n:maxLm});render();return;}tr.landmarks.push(id);tr.lmNone=false;}M.msg='';render();}
-  function toDetails(){if(!detQs.length){afterWalk();return;}M.phase='details';detCards=null;M.msg='';render();}
-  function afterRoute(){focusTo='panel';if(askLm){M.phase='landmarks';M.msg='';render();return;}toDetails();}
+    if(i>=0)tr.landmarks.splice(i,1);else{if(tr.landmarks.length>=maxLm){M.msg=fmt(T.map_lmMax,{n:maxLm});render();return;}tr.landmarks.push(id);tr.lmNone=false;if(tr.landmarks.length>=maxLm)focusTo=()=>panel.querySelector('.row .btn.primary');}M.msg='';render();}
+  function toDetails(){if(!detQs.length){afterWalk();return;}focusTo='panel';M.phase='details';detCards=null;M.msg='';render();}
+  function afterRoute(){focusTo='map';if(askLm){M.phase='landmarks';M.msg='';render();return;}toDetails();}
   Object.entries(H.poiG).forEach(([id,g])=>{if(g.classList.contains('poi'))g.addEventListener('click',()=>{if(VP.moved())return;tapPoi(id);});});
   /* route phase: a tap goes to the nearest path that can be added next, even when a place circle,
      a junction dot or an overlapping path lies on top of it */
@@ -772,19 +773,20 @@ function makeMapTask(q,store,changed){
     if(tr.path.length&&tr.path[tr.path.length-1].id===id){tr.path.pop();M.msg='';render();return;}
     const ok=canTap(tr);
     if(!ok.includes(id)){M.msg=endNode(tr)===pNode(tr.dest)?T.map_reached:T.map_tapNext;render();return;}
-    const s=SEGBY[id],e=endNode(tr);tr.path.push({id,from:e,to:s.a===e?s.b:s.a});M.msg=(endNode(tr)!==pNode(tr.dest)&&!canTap(tr).length)?T.map_deadEnd:'';render();follow(tr);}
+    const s=SEGBY[id],e=endNode(tr);tr.path.push({id,from:e,to:s.a===e?s.b:s.a});M.msg=(endNode(tr)!==pNode(tr.dest)&&!canTap(tr).length)?T.map_deadEnd:'';
+    if(endNode(tr)===pNode(tr.dest))focusTo=()=>panel.querySelector('.row .btn.primary');render();follow(tr);}
   /* segments of walk ti that were not already rated in an earlier walk */
   function walkSegs(ti){const seen=new Set();M.trips.forEach((t,i)=>{if(i<ti&&!t.skipped)t.path.forEach(p=>seen.add(p.id));});const out=[],own=new Set();if(!M.trips[ti].skipped)M.trips[ti].path.forEach(p=>{if(!seen.has(p.id)&&!own.has(p.id)){own.add(p.id);out.push(p);}});return out;}
-  function nextTrip(){focusTo='panel';M.trips[M.t].done=true;const n=M.trips.length;let i=-1;
+  function nextTrip(){focusTo='map';M.trips[M.t].done=true;const n=M.trips.length;let i=-1;
     for(let k=1;k<=n;k++){const j=(M.t+k)%n;if(!M.trips[j].done&&(j>M.t||k===n||!M.trips.slice(M.t+1).some(t=>!t.done))){i=j;break;}}
     if(i<0)M.phase='done';else{const tr=M.trips[i];M.t=i;M.phase=!tr.origin?'origin':!tr.dest?'dest':'route';}M.r=0;M.msg='';detCards=null;render();}
   /* go back to a walk: a skipped walk starts again at its start question, an answered one reopens with its answers kept */
-  function openTrip(i){const tr=M.trips[i];if(!tr)return;tr.done=false;M.t=i;M.r=0;M.msg='';detCards=null;focusTo='panel';
+  function openTrip(i){const tr=M.trips[i];if(!tr)return;tr.done=false;M.t=i;M.r=0;M.msg='';detCards=null;
     if(tr.skipped||!tr.origin){tr.skipped=false;tr.origin=tr.dest=null;tr.path=[];M.phase='origin';}
     else if(!tr.dest)M.phase='dest';
     else M.phase=detQs.length?'details':(askLm?'landmarks':'route');
-    push();render();}
-  function afterWalk(){detCards=null;focusTo='panel';if(items.length&&walkSegs(M.t).length){M.phase='rate';M.r=0;M.msg='';render();setTimeout(()=>{const _rh=panel.querySelector('h3');if(_rh)_rh.scrollIntoView({behavior:'smooth',block:'start'});},300);}else nextTrip();}
+    focusTo=M.phase==='details'?'panel':'map';push();render();}
+  function afterWalk(){detCards=null;focusTo='panel';if(items.length&&walkSegs(M.t).length){M.phase='rate';M.r=0;M.msg='';focusTo='map';render();}else nextTrip();}
   /* map layer styling */
   let shownSeg=null;
   function renderMap(){const tr=trip();const can=M.phase==='route'?canTap(tr):[];const rating=M.phase==='rate',done=M.phase==='done';
@@ -843,7 +845,7 @@ function makeMapTask(q,store,changed){
           h('button',{type:'button',class:'btn','aria-pressed':String(!!tr.lmNone),text:T.map_lmNone,on:{click:()=>{tr.landmarks=[];tr.lmNone=true;push();toDetails();}}}),
           h('button',{type:'button',class:'btn primary',disabled:!tr.landmarks.length,text:T.map_lmContinue,on:{click:()=>{if(!tr.landmarks.length){M.msg=T.map_lmNeed;render2msg();return;}tr.lmNone=false;focusTo='panel';toDetails();}}})));}
     else if(M.phase==='details'){
-      if(!detCards){detCards=detQs.map(dq=>makeQuestion(dq,tr.details,()=>{refreshDet();push();},{local:true}));}
+      if(!detCards){detCards=detQs.map(dq=>makeQuestion(dq,tr.details,aq=>{refreshDet();push();detNext(aq);},{local:true}));}
       const refreshDet=()=>detCards.forEach(c=>{c.el.hidden=!condOK(c.q,tr.details);});
       panel.append(eb,h('h3',{text:T.map_aboutQ}),od(tr),h('div',{class:'dform'},detCards.map(c=>c.el)),
         h('div',{class:'row'},h('button',{type:'button',class:'btn',text:T.map_editRoute,on:{click:()=>{M.phase='route';detCards=null;render();}}}),
@@ -858,7 +860,8 @@ function makeMapTask(q,store,changed){
         M.r>0&&cfg.allowSame!==false?h('div',{class:'row'},h('button',{type:'button',class:'btn',text:T.map_same,on:{click:()=>{M.ratings[cur.id]=Object.assign({},M.ratings[us[M.r-1].id]);push();render();}}})):null,
         h('div',null,items.map(it=>{const labs=it.labels||[];const vals=labs.map((_,i)=>i+1);
           return h('div',{class:'item'+(it.overall?' overall':'')},h('div',{class:'q-t'},h('small',{text:it.key}),document.createTextNode(it.text)),
-            scaleRow(vals.length?vals:[1,2,3,4,5],labs,r[it.key],v=>{M.ratings[cur.id]=M.ratings[cur.id]||{};M.ratings[cur.id][it.key]=v;push();render();}));})),
+            scaleRow(vals.length?vals:[1,2,3,4,5],labs,r[it.key],v=>{M.ratings[cur.id]=M.ratings[cur.id]||{};M.ratings[cur.id][it.key]=v;push();
+            focusTo=()=>{const rr=M.ratings[cur.id]||{};const k=items.findIndex(x=>rr[x.key]===undefined);return k<0?panel.querySelector('.row .btn.primary'):panel.querySelectorAll('.item')[k];};render();}));})),
         h('div',{class:'row'},h('button',{type:'button',class:'btn',text:T.map_prev,on:{click:()=>{if(M.r)M.r--;else{M.phase=detQs.length?'details':(askLm?'landmarks':'route');detCards=null;}render();}}}),
           h('button',{type:'button',class:'btn primary',disabled:!complete,text:complete?(M.r<us.length-1?T.map_nextPath:(M.t<M.trips.length-1?T.map_nextWalk:T.map_finish)):fmt(T.map_answerAll,{n:items.length,k:doneN}),on:{click:()=>{if(M.r<us.length-1){M.r++;focusTo='map';push();render();}else{push();nextTrip();}}}})));}
     else{const us=uniqueSegs();
@@ -868,8 +871,11 @@ function makeMapTask(q,store,changed){
         h('p',{class:'hint',text:fmt(T.map_ratedN,{n:us.length})}),
         h('p',{class:'hint',text:T.map_finishedInfo}));}
     panel.append(msg);}
+  /* phones: after a walk-detail choice, scroll to the next unanswered detail question, or to the button when all are answered (typed answers do not scroll) */
+  function detNext(aq){if(!aq||/^(number|text|textarea)$/.test(aq.type))return;clearTimeout(detNext.t);detNext.t=setTimeout(()=>{if(M.phase!=='details'||!detCards)return;
+    const nx=detCards.find(c=>!c.el.hidden&&isEmpty(trip().details[c.q.name]));jump(nx?nx.el:panel.querySelector('.row .btn.primary'),nx?'start':'nearest');},220);}
   function render2msg(){const m=panel.querySelector('.mt-msg');if(m)m.textContent=M.msg;}
-  function render(){renderMap();renderPanel();if(focusTo){const f=focusTo;focusTo=null;jump(f==='map'?VP.wrap:panel);}if(M.phase==='done')push();else if(M.phase!=='origin'||M.t>0||trip().path.length||trip().origin)push();}
+  function render(){renderMap();renderPanel();if(focusTo){const f=focusTo;focusTo=null;if(typeof f==='function'){const el=f();if(el)jump(el,'nearest');}else jump(f==='map'?VP.wrap:panel);}if(M.phase==='done')push();else if(M.phase!=='origin'||M.t>0||trip().path.length||trip().origin)push();}
   render();
   return{el:wrap,validate:()=>M.phase==='done'?null:(q.required!==false?T.map_unfinished:null),incomplete:()=>M.phase!=='done'};
 }
