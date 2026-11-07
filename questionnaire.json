@@ -434,33 +434,10 @@
      "match": "all"
     },
     {
-     "id": "qpm2onl8",
-     "name": "which_programme_are_you_stud",
-     "nameAuto": true,
-     "code": "A11",
-     "type": "text",
-     "title": "Which programme are you studying? (copy)",
-     "description": "",
-     "required": true,
-     "agent": "programme",
-     "inputType": "text",
-     "placeholder": "e.g. Architecture",
-     "minLen": "",
-     "maxLen": "",
-     "conditions": [
-      {
-       "q": "role",
-       "op": "in",
-       "value": "ug,pg"
-      }
-     ],
-     "match": "all"
-    },
-    {
      "id": "q7tqbz32",
      "name": "which_faculty_or_building_do",
      "nameAuto": true,
-     "code": "",
+     "code": "A12",
      "type": "text",
      "title": "Which faculty or building do you mainly go to?",
      "description": "",
@@ -516,7 +493,8 @@
      "allowOther": false,
      "otherLabel": "Other",
      "layout": "list",
-     "randomize": false
+     "randomize": false,
+     "conditions": []
     },
     {
      "id": "qz6tiawy",
@@ -875,7 +853,8 @@
      "allowOther": false,
      "otherLabel": "Other",
      "layout": "list",
-     "randomize": false
+     "randomize": false,
+     "conditions": []
     },
     {
      "id": "qqk9t1z7",
@@ -908,7 +887,8 @@
      "allowOther": false,
      "otherLabel": "Other",
      "layout": "list",
-     "randomize": false
+     "randomize": false,
+     "conditions": []
     }
    ]
   },
@@ -946,7 +926,8 @@
      "allowOther": false,
      "otherLabel": "Other",
      "layout": "list",
-     "randomize": false
+     "randomize": false,
+     "conditions": []
     },
     {
      "id": "q9do70it",
@@ -1036,7 +1017,8 @@
      "layout": "list",
      "minSelections": 1,
      "maxSelections": 3,
-     "randomize": false
+     "randomize": false,
+     "conditions": []
     },
     {
      "id": "qtms0ebp",
@@ -1092,7 +1074,8 @@
        "value": "5"
       }
      ],
-     "shuffleRows": false
+     "shuffleRows": false,
+     "conditions": []
     }
    ]
   },
@@ -1254,12 +1237,12 @@
        "agent": "rc_distance"
       },
       {
-       "label": "Least change of direction (keeping straight)",
+       "label": "Least change of direction (keeping a straight walk as much as possible)",
        "value": "angular",
        "agent": "rc_least_angle"
       },
       {
-       "label": "The fewest turns",
+       "label": "The fewest turns from one path to another",
        "value": "turns",
        "agent": "rc_fewest_turns"
       },
@@ -1387,7 +1370,7 @@
      "nameAuto": false,
      "code": "D5",
      "type": "number",
-     "title": "Out of 10 walks on campus, on how many wrong turns or have to back turns you encounter?",
+     "title": "Out of 10 walks on campus, how many wrong turns or back turns you encounter?",
      "description": "",
      "required": true,
      "agent": "wrong_turns_per_10_walks",
@@ -1404,7 +1387,7 @@
      "nameAuto": false,
      "code": "D6",
      "type": "number",
-     "title": "Out of 10 walks that pass a landmark you know, how many wrong turns or have to turn back?",
+     "title": "Out of 10 walks that pass a landmark you know, how many wrong turns or back turns? .. please write an integer number",
      "description": "",
      "required": true,
      "agent": "wrong_turns_per_10_walks_landmark",
@@ -1421,7 +1404,7 @@
      "nameAuto": false,
      "code": "D7",
      "type": "number",
-     "title": "To use a route you prefer (nicer, safer, shaded or more familiar), how many extra minutes would you accept on a 10-minute walk?",
+     "title": "To use a route you prefer (nicer, safer, shaded or more familiar), how many extra minutes would you accept on a 10-minute walk? .. please write an integer number",
      "description": "",
      "required": true,
      "agent": "detour_tolerance_min",
@@ -1438,7 +1421,7 @@
      "nameAuto": false,
      "code": "D8",
      "type": "number",
-     "title": "A path starts to feel crowded to you when about how many other people are walking within 20 metres of you?",
+     "title": "A path starts to feel crowded to you when about how many other people are walking within 20 meters of you? .. please write an integer number",
      "description": "Twenty metres is about four car lengths.",
      "required": true,
      "agent": "crowd_threshold_people",
@@ -1446,7 +1429,8 @@
      "max": 100,
      "integer": true,
      "unit": "people",
-     "placeholder": ""
+     "placeholder": "",
+     "conditions": []
     },
     {
      "id": "qwpdditz",
@@ -1454,7 +1438,7 @@
      "nameAuto": false,
      "code": "D9",
      "type": "number",
-     "title": "When a path feels crowded, how many extra minutes does a 10-minute walk take you?",
+     "title": "When a path feels crowded, how many extra minutes does a 10-minute walk take you? .. please write an integer number",
      "description": "",
      "required": true,
      "agent": "crowd_slowdown_min",
@@ -1462,7 +1446,8 @@
      "max": 30,
      "integer": true,
      "unit": "minutes",
-     "placeholder": ""
+     "placeholder": "",
+     "conditions": []
     }
    ]
   },
@@ -1798,28 +1783,6 @@
         "otherLabel": "Other",
         "layout": "list",
         "randomize": false
-       },
-       {
-        "id": "qsberqt1",
-        "name": "in_which_half_hour_do_you_us",
-        "nameAuto": true,
-        "code": "",
-        "type": "dropdown",
-        "title": "In which half hour do you usually arrive on campus",
-        "description": "",
-        "required": true,
-        "agent": "",
-        "options": [
-         {
-          "label": "Option 1"
-         },
-         {
-          "label": "Option 2"
-         }
-        ],
-        "allowOther": false,
-        "otherLabel": "Other",
-        "layout": "list"
        }
       ],
       "ratingItems": [
