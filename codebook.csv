@@ -1,0 +1,374 @@
+code,variable,agent_attribute,type,answer_code,answer_label
+A1,age,age_group,radio,u18,Under 18
+A1,age,age_group,radio,18_21,18 to 21
+A1,age,age_group,radio,22_25,22 to 25
+A1,age,age_group,radio,26_35,26 to 35
+A1,age,age_group,radio,36_50,36 to 50
+A1,age,age_group,radio,50plus,Over 50
+A2,sex,sex,radio,f,Female
+A2,sex,sex,radio,m,Male
+A3,role,role,radio,ug,Undergraduate student
+A3,role,role,radio,pg,Postgraduate student
+A3,role,role,radio,academic,Academic staff
+A3,role,role,radio,staff,Administrative or support staff
+A3,role,role,radio,visitor,Visitor
+A4,ug_stage,role_subtype,radio,y1,Freshman: 1st year
+A4,ug_stage,role_subtype,radio,y2,Sophomore: 2nd year
+A4,ug_stage,role_subtype,radio,y3,Junior: 3rd year
+A4,ug_stage,role_subtype,radio,y4,Senior: 4th year
+A4,ug_stage,role_subtype,radio,y5,5th year or above
+A5,pg_level,role_subtype,radio,diploma,Diploma
+A5,pg_level,role_subtype,radio,masters,Master's
+A5,pg_level,role_subtype,radio,phd,PhD
+A7,academic_rank,role_subtype,radio,ta,Teaching assistant or demonstrator
+A7,academic_rank,role_subtype,radio,al,Assistant lecturer
+A7,academic_rank,role_subtype,radio,lecturer,Lecturer or assistant professor
+A7,academic_rank,role_subtype,radio,assoc,Associate professor
+A7,academic_rank,role_subtype,radio,prof,Professor
+A8,staff_type,role_subtype,radio,office,Office or administrative work
+A8,staff_type,role_subtype,radio,technical,Technical or laboratory work
+A8,staff_type,role_subtype,radio,facilities,"Facilities, maintenance or cleaning"
+A8,staff_type,role_subtype,radio,security,Security
+A8,staff_type,role_subtype,radio,service,Food or retail service
+A9,visit_purpose,role_subtype,radio,prospective,Prospective student
+A9,visit_purpose,role_subtype,radio,event,"Event, conference or exhibition"
+A9,visit_purpose,role_subtype,radio,business,Business or meeting
+A9,visit_purpose,role_subtype,radio,service,"A service (office, clinic, bank)"
+A9,visit_purpose,role_subtype,radio,companion,Accompanying someone
+A9,visit_purpose,role_subtype,radio,family,family
+A10,qualification,education,radio,secondary,Secondary school or equivalent
+A10,qualification,education,radio,diploma,Diploma
+A10,qualification,education,radio,bachelor,Bachelor's degree
+A10,qualification,education,radio,master,Master's degree
+A10,qualification,education,radio,doctorate,Doctorate
+A10,qualification,education,radio,none,None
+A11,programme,programme,text,(text),free text
+A12,which_faculty_or_building_do,,text,(text),free text
+B1,arrival_mode,entry_mode,radio,walk,Walking
+B1,arrival_mode,entry_mode,radio,bike,Bicycle or scooter
+B1,arrival_mode,entry_mode,radio,bus,Bus or minibus
+B1,arrival_mode,entry_mode,radio,car,Car
+B1,arrival_mode,entry_mode,radio,taxi,Ride-hailing or taxi
+B4a,arrival_clock,arrival_clock,dropdown,05:00,05:00 – 05:30
+B4a,arrival_clock,arrival_clock,dropdown,05:30,05:30 – 06:00
+B4a,arrival_clock,arrival_clock,dropdown,06:00,06:00 – 06:30
+B4a,arrival_clock,arrival_clock,dropdown,06:30,06:30 – 07:00
+B4a,arrival_clock,arrival_clock,dropdown,07:00,07:00 – 07:30
+B4a,arrival_clock,arrival_clock,dropdown,07:30,07:30 – 08:00
+B4a,arrival_clock,arrival_clock,dropdown,08:00,08:00 – 08:30
+B4a,arrival_clock,arrival_clock,dropdown,08:30,08:30 – 09:00
+B4a,arrival_clock,arrival_clock,dropdown,09:00,09:00 – 09:30
+B4a,arrival_clock,arrival_clock,dropdown,09:30,09:30 – 10:00
+B4a,arrival_clock,arrival_clock,dropdown,10:00,10:00 – 10:30
+B4a,arrival_clock,arrival_clock,dropdown,10:30,10:30 – 11:00
+B4a,arrival_clock,arrival_clock,dropdown,11:00,11:00 – 11:30
+B4a,arrival_clock,arrival_clock,dropdown,11:30,11:30 – 12:00
+B4a,arrival_clock,arrival_clock,dropdown,12:00,12:00 – 12:30
+B4a,arrival_clock,arrival_clock,dropdown,12:30,12:30 – 13:00
+B4a,arrival_clock,arrival_clock,dropdown,13:00,13:00 – 13:30
+B4a,arrival_clock,arrival_clock,dropdown,13:30,13:30 – 14:00
+B4a,arrival_clock,arrival_clock,dropdown,14:00,14:00 – 14:30
+B4a,arrival_clock,arrival_clock,dropdown,14:30,14:30 – 15:00
+B4a,arrival_clock,arrival_clock,dropdown,15:00,15:00 – 15:30
+B4a,arrival_clock,arrival_clock,dropdown,15:30,15:30 – 16:00
+B4a,arrival_clock,arrival_clock,dropdown,16:00,16:00 – 16:30
+B4a,arrival_clock,arrival_clock,dropdown,16:30,16:30 – 17:00
+B4a,arrival_clock,arrival_clock,dropdown,17:00,17:00 – 17:30
+B4a,arrival_clock,arrival_clock,dropdown,17:30,17:30 – 18:00
+B4a,arrival_clock,arrival_clock,dropdown,18:00,18:00 – 18:30
+B4a,arrival_clock,arrival_clock,dropdown,18:30,18:30 – 19:00
+B4a,arrival_clock,arrival_clock,dropdown,19:00,19:00 – 19:30
+B4a,arrival_clock,arrival_clock,dropdown,19:30,19:30 – 20:00
+B4a,arrival_clock,arrival_clock,dropdown,20:00,20:00 – 20:30
+B4a,arrival_clock,arrival_clock,dropdown,20:30,20:30 – 21:00
+B4a,arrival_clock,arrival_clock,dropdown,21:00,21:00 – 21:30
+B4a,arrival_clock,arrival_clock,dropdown,21:30,21:30 – 22:00
+B4a,arrival_clock,arrival_clock,dropdown,22:00,22:00 – 22:30
+B4a,arrival_clock,arrival_clock,dropdown,22:30,22:30 – 23:00
+B5a,leave_clock,departure_clock,dropdown,05:00,05:00 – 05:30
+B5a,leave_clock,departure_clock,dropdown,05:30,05:30 – 06:00
+B5a,leave_clock,departure_clock,dropdown,06:00,06:00 – 06:30
+B5a,leave_clock,departure_clock,dropdown,06:30,06:30 – 07:00
+B5a,leave_clock,departure_clock,dropdown,07:00,07:00 – 07:30
+B5a,leave_clock,departure_clock,dropdown,07:30,07:30 – 08:00
+B5a,leave_clock,departure_clock,dropdown,08:00,08:00 – 08:30
+B5a,leave_clock,departure_clock,dropdown,08:30,08:30 – 09:00
+B5a,leave_clock,departure_clock,dropdown,09:00,09:00 – 09:30
+B5a,leave_clock,departure_clock,dropdown,09:30,09:30 – 10:00
+B5a,leave_clock,departure_clock,dropdown,10:00,10:00 – 10:30
+B5a,leave_clock,departure_clock,dropdown,10:30,10:30 – 11:00
+B5a,leave_clock,departure_clock,dropdown,11:00,11:00 – 11:30
+B5a,leave_clock,departure_clock,dropdown,11:30,11:30 – 12:00
+B5a,leave_clock,departure_clock,dropdown,12:00,12:00 – 12:30
+B5a,leave_clock,departure_clock,dropdown,12:30,12:30 – 13:00
+B5a,leave_clock,departure_clock,dropdown,13:00,13:00 – 13:30
+B5a,leave_clock,departure_clock,dropdown,13:30,13:30 – 14:00
+B5a,leave_clock,departure_clock,dropdown,14:00,14:00 – 14:30
+B5a,leave_clock,departure_clock,dropdown,14:30,14:30 – 15:00
+B5a,leave_clock,departure_clock,dropdown,15:00,15:00 – 15:30
+B5a,leave_clock,departure_clock,dropdown,15:30,15:30 – 16:00
+B5a,leave_clock,departure_clock,dropdown,16:00,16:00 – 16:30
+B5a,leave_clock,departure_clock,dropdown,16:30,16:30 – 17:00
+B5a,leave_clock,departure_clock,dropdown,17:00,17:00 – 17:30
+B5a,leave_clock,departure_clock,dropdown,17:30,17:30 – 18:00
+B5a,leave_clock,departure_clock,dropdown,18:00,18:00 – 18:30
+B5a,leave_clock,departure_clock,dropdown,18:30,18:30 – 19:00
+B5a,leave_clock,departure_clock,dropdown,19:00,19:00 – 19:30
+B5a,leave_clock,departure_clock,dropdown,19:30,19:30 – 20:00
+B5a,leave_clock,departure_clock,dropdown,20:00,20:00 – 20:30
+B5a,leave_clock,departure_clock,dropdown,20:30,20:30 – 21:00
+B5a,leave_clock,departure_clock,dropdown,21:00,21:00 – 21:30
+B5a,leave_clock,departure_clock,dropdown,21:30,21:30 – 22:00
+B5a,leave_clock,departure_clock,dropdown,22:00,22:00 – 22:30
+B5a,leave_clock,departure_clock,dropdown,22:30,22:30 – 23:00
+B6,days_per_week,visit_frequency,radio,d0,Less than once a week
+B6,days_per_week,visit_frequency,radio,d1,1 day
+B6,days_per_week,visit_frequency,radio,d2,2 to 3 days
+B6,days_per_week,visit_frequency,radio,d4,4 to 5 days
+B6,days_per_week,visit_frequency,radio,d6,6 to 7 days
+B9,walks_per_day,trips_per_day,radio,w1,1 or 2
+B9,walks_per_day,trips_per_day,radio,w3,3 or 4
+B9,walks_per_day,trips_per_day,radio,w5,5 or 6
+B9,walks_per_day,trips_per_day,radio,w7,7 or more
+B10,walk_company,group_size,radio,g1,Alone
+B10,walk_company,group_size,radio,g2,With one other person
+B10,walk_company,group_size,radio,g3,In a group of three or more
+B11,walk_pace,walking_speed,radio,slow,"Slow, I take my time"
+B11,walk_pace,walking_speed,radio,average,Average
+B11,walk_pace,walking_speed,radio,fast,"Fast, I walk briskly"
+C1,visual_features,perc_visual_features,checkbox,greenery,Trees and greenery
+C1,visual_features,perc_visual_features,checkbox,facades,Building facades
+C1,visual_features,perc_visual_features,checkbox,signs,Signs
+C1,visual_features,perc_visual_features,checkbox,art,Artworks or monuments
+C1,visual_features,perc_visual_features,checkbox,people,People and activity
+C1,visual_features,perc_visual_features,checkbox,views,Open views and sky
+C1,visual_features,perc_visual_features,checkbox,shade,Shade structures
+C1,visual_features,perc_visual_features,checkbox,water,Water features
+C2 The campus layout is easy to understand.,legibility_leg1,cog_legibility,matrix,1,Strongly disagree
+C2 The campus layout is easy to understand.,legibility_leg1,cog_legibility,matrix,2,Disagree
+C2 The campus layout is easy to understand.,legibility_leg1,cog_legibility,matrix,3,Neither agree nor disagree
+C2 The campus layout is easy to understand.,legibility_leg1,cog_legibility,matrix,4,Agree
+C2 The campus layout is easy to understand.,legibility_leg1,cog_legibility,matrix,5,Strongly agree
+C2 Different parts of the campus look and feel distinct from each other.,legibility_leg2,cog_legibility,matrix,1,Strongly disagree
+C2 Different parts of the campus look and feel distinct from each other.,legibility_leg2,cog_legibility,matrix,2,Disagree
+C2 Different parts of the campus look and feel distinct from each other.,legibility_leg2,cog_legibility,matrix,3,Neither agree nor disagree
+C2 Different parts of the campus look and feel distinct from each other.,legibility_leg2,cog_legibility,matrix,4,Agree
+C2 Different parts of the campus look and feel distinct from each other.,legibility_leg2,cog_legibility,matrix,5,Strongly agree
+"C2 Wherever I am, I can tell how it connects to the rest of the campus.",legibility_int1,cog_intelligibility,matrix,1,Strongly disagree
+"C2 Wherever I am, I can tell how it connects to the rest of the campus.",legibility_int1,cog_intelligibility,matrix,2,Disagree
+"C2 Wherever I am, I can tell how it connects to the rest of the campus.",legibility_int1,cog_intelligibility,matrix,3,Neither agree nor disagree
+"C2 Wherever I am, I can tell how it connects to the rest of the campus.",legibility_int1,cog_intelligibility,matrix,4,Agree
+"C2 Wherever I am, I can tell how it connects to the rest of the campus.",legibility_int1,cog_intelligibility,matrix,5,Strongly agree
+C2 The main paths lead clearly to the main destinations.,legibility_int2,cog_intelligibility,matrix,1,Strongly disagree
+C2 The main paths lead clearly to the main destinations.,legibility_int2,cog_intelligibility,matrix,2,Disagree
+C2 The main paths lead clearly to the main destinations.,legibility_int2,cog_intelligibility,matrix,3,Neither agree nor disagree
+C2 The main paths lead clearly to the main destinations.,legibility_int2,cog_intelligibility,matrix,4,Agree
+C2 The main paths lead clearly to the main destinations.,legibility_int2,cog_intelligibility,matrix,5,Strongly agree
+D1 I rarely get lost on campus.,lrs_lost,wayfinding_ability,matrix,1,Strongly disagree
+D1 I rarely get lost on campus.,lrs_lost,wayfinding_ability,matrix,2,Disagree
+D1 I rarely get lost on campus.,lrs_lost,wayfinding_ability,matrix,3,Neither agree nor disagree
+D1 I rarely get lost on campus.,lrs_lost,wayfinding_ability,matrix,4,Agree
+D1 I rarely get lost on campus.,lrs_lost,wayfinding_ability,matrix,5,Strongly agree
+D1 I recognise the main buildings and landmarks on campus.,lrs_l1,know_landmark,matrix,1,Strongly disagree
+D1 I recognise the main buildings and landmarks on campus.,lrs_l1,know_landmark,matrix,2,Disagree
+D1 I recognise the main buildings and landmarks on campus.,lrs_l1,know_landmark,matrix,3,Neither agree nor disagree
+D1 I recognise the main buildings and landmarks on campus.,lrs_l1,know_landmark,matrix,4,Agree
+D1 I recognise the main buildings and landmarks on campus.,lrs_l1,know_landmark,matrix,5,Strongly agree
+"D1 I remember distinctive features (signs, trees, artworks) along my paths.",lrs_l2,know_landmark,matrix,1,Strongly disagree
+"D1 I remember distinctive features (signs, trees, artworks) along my paths.",lrs_l2,know_landmark,matrix,2,Disagree
+"D1 I remember distinctive features (signs, trees, artworks) along my paths.",lrs_l2,know_landmark,matrix,3,Neither agree nor disagree
+"D1 I remember distinctive features (signs, trees, artworks) along my paths.",lrs_l2,know_landmark,matrix,4,Agree
+"D1 I remember distinctive features (signs, trees, artworks) along my paths.",lrs_l2,know_landmark,matrix,5,Strongly agree
+D1 I can describe my usual routes turn by turn.,lrs_r1,know_route,matrix,1,Strongly disagree
+D1 I can describe my usual routes turn by turn.,lrs_r1,know_route,matrix,2,Disagree
+D1 I can describe my usual routes turn by turn.,lrs_r1,know_route,matrix,3,Neither agree nor disagree
+D1 I can describe my usual routes turn by turn.,lrs_r1,know_route,matrix,4,Agree
+D1 I can describe my usual routes turn by turn.,lrs_r1,know_route,matrix,5,Strongly agree
+D1 I know where to turn at each intersection on my usual routes.,lrs_r2,know_route,matrix,1,Strongly disagree
+D1 I know where to turn at each intersection on my usual routes.,lrs_r2,know_route,matrix,2,Disagree
+D1 I know where to turn at each intersection on my usual routes.,lrs_r2,know_route,matrix,3,Neither agree nor disagree
+D1 I know where to turn at each intersection on my usual routes.,lrs_r2,know_route,matrix,4,Agree
+D1 I know where to turn at each intersection on my usual routes.,lrs_r2,know_route,matrix,5,Strongly agree
+D1 I could draw a rough map of the whole campus.,lrs_s1,know_survey,matrix,1,Strongly disagree
+D1 I could draw a rough map of the whole campus.,lrs_s1,know_survey,matrix,2,Disagree
+D1 I could draw a rough map of the whole campus.,lrs_s1,know_survey,matrix,3,Neither agree nor disagree
+D1 I could draw a rough map of the whole campus.,lrs_s1,know_survey,matrix,4,Agree
+D1 I could draw a rough map of the whole campus.,lrs_s1,know_survey,matrix,5,Strongly agree
+D1 I can find shortcuts between places I have not walked between before.,lrs_s2,know_survey,matrix,1,Strongly disagree
+D1 I can find shortcuts between places I have not walked between before.,lrs_s2,know_survey,matrix,2,Disagree
+D1 I can find shortcuts between places I have not walked between before.,lrs_s2,know_survey,matrix,3,Neither agree nor disagree
+D1 I can find shortcuts between places I have not walked between before.,lrs_s2,know_survey,matrix,4,Agree
+D1 I can find shortcuts between places I have not walked between before.,lrs_s2,know_survey,matrix,5,Strongly agree
+D2 Signs,cue_signs,cue_signs,matrix,1,Never
+D2 Signs,cue_signs,cue_signs,matrix,2,Rarely
+D2 Signs,cue_signs,cue_signs,matrix,3,Sometimes
+D2 Signs,cue_signs,cue_signs,matrix,4,Often
+D2 Signs,cue_signs,cue_signs,matrix,5,Always
+D2 Landmarks and distinctive buildings,cue_landmarks,cue_landmarks,matrix,1,Never
+D2 Landmarks and distinctive buildings,cue_landmarks,cue_landmarks,matrix,2,Rarely
+D2 Landmarks and distinctive buildings,cue_landmarks,cue_landmarks,matrix,3,Sometimes
+D2 Landmarks and distinctive buildings,cue_landmarks,cue_landmarks,matrix,4,Often
+D2 Landmarks and distinctive buildings,cue_landmarks,cue_landmarks,matrix,5,Always
+D2 Maps (boards or phone),cue_maps,cue_maps,matrix,1,Never
+D2 Maps (boards or phone),cue_maps,cue_maps,matrix,2,Rarely
+D2 Maps (boards or phone),cue_maps,cue_maps,matrix,3,Sometimes
+D2 Maps (boards or phone),cue_maps,cue_maps,matrix,4,Often
+D2 Maps (boards or phone),cue_maps,cue_maps,matrix,5,Always
+D2 Following or asking other people,cue_people,cue_people,matrix,1,Never
+D2 Following or asking other people,cue_people,cue_people,matrix,2,Rarely
+D2 Following or asking other people,cue_people,cue_people,matrix,3,Sometimes
+D2 Following or asking other people,cue_people,cue_people,matrix,4,Often
+D2 Following or asking other people,cue_people,cue_people,matrix,5,Always
+D2 My memory of the route,cue_memory,cue_memory,matrix,1,Never
+D2 My memory of the route,cue_memory,cue_memory,matrix,2,Rarely
+D2 My memory of the route,cue_memory,cue_memory,matrix,3,Sometimes
+D2 My memory of the route,cue_memory,cue_memory,matrix,4,Often
+D2 My memory of the route,cue_memory,cue_memory,matrix,5,Always
+D3 The shortest distance,rc_distance,rc_distance,matrix,1,Not at all
+D3 The shortest distance,rc_distance,rc_distance,matrix,2,Slightly
+D3 The shortest distance,rc_distance,rc_distance,matrix,3,Moderately
+D3 The shortest distance,rc_distance,rc_distance,matrix,4,Very much
+D3 The shortest distance,rc_distance,rc_distance,matrix,5,Completely
+D3 Least change of direction (keeping a straight walk as much as possible),rc_angular,rc_least_angle,matrix,1,Not at all
+D3 Least change of direction (keeping a straight walk as much as possible),rc_angular,rc_least_angle,matrix,2,Slightly
+D3 Least change of direction (keeping a straight walk as much as possible),rc_angular,rc_least_angle,matrix,3,Moderately
+D3 Least change of direction (keeping a straight walk as much as possible),rc_angular,rc_least_angle,matrix,4,Very much
+D3 Least change of direction (keeping a straight walk as much as possible),rc_angular,rc_least_angle,matrix,5,Completely
+D3 The fewest turns from one path to another,rc_turns,rc_fewest_turns,matrix,1,Not at all
+D3 The fewest turns from one path to another,rc_turns,rc_fewest_turns,matrix,2,Slightly
+D3 The fewest turns from one path to another,rc_turns,rc_fewest_turns,matrix,3,Moderately
+D3 The fewest turns from one path to another,rc_turns,rc_fewest_turns,matrix,4,Very much
+D3 The fewest turns from one path to another,rc_turns,rc_fewest_turns,matrix,5,Completely
+D3 A shaded route,rc_shade,rc_shade,matrix,1,Not at all
+D3 A shaded route,rc_shade,rc_shade,matrix,2,Slightly
+D3 A shaded route,rc_shade,rc_shade,matrix,3,Moderately
+D3 A shaded route,rc_shade,rc_shade,matrix,4,Very much
+D3 A shaded route,rc_shade,rc_shade,matrix,5,Completely
+D3 A comfortable walking surface,rc_surface,rc_surface,matrix,1,Not at all
+D3 A comfortable walking surface,rc_surface,rc_surface,matrix,2,Slightly
+D3 A comfortable walking surface,rc_surface,rc_surface,matrix,3,Moderately
+D3 A comfortable walking surface,rc_surface,rc_surface,matrix,4,Very much
+D3 A comfortable walking surface,rc_surface,rc_surface,matrix,5,Completely
+D3 Feeling safe,rc_safety,rc_safety,matrix,1,Not at all
+D3 Feeling safe,rc_safety,rc_safety,matrix,2,Slightly
+D3 Feeling safe,rc_safety,rc_safety,matrix,3,Moderately
+D3 Feeling safe,rc_safety,rc_safety,matrix,4,Very much
+D3 Feeling safe,rc_safety,rc_safety,matrix,5,Completely
+D3 Pleasant views and greenery,rc_scenery,rc_scenery,matrix,1,Not at all
+D3 Pleasant views and greenery,rc_scenery,rc_scenery,matrix,2,Slightly
+D3 Pleasant views and greenery,rc_scenery,rc_scenery,matrix,3,Moderately
+D3 Pleasant views and greenery,rc_scenery,rc_scenery,matrix,4,Very much
+D3 Pleasant views and greenery,rc_scenery,rc_scenery,matrix,5,Completely
+D3 Passing places I need for work or study,rc_purpose,rc_purpose,matrix,1,Not at all
+D3 Passing places I need for work or study,rc_purpose,rc_purpose,matrix,2,Slightly
+D3 Passing places I need for work or study,rc_purpose,rc_purpose,matrix,3,Moderately
+D3 Passing places I need for work or study,rc_purpose,rc_purpose,matrix,4,Very much
+D3 Passing places I need for work or study,rc_purpose,rc_purpose,matrix,5,Completely
+D3 Using a route I already know,rc_familiar,rc_familiar,matrix,1,Not at all
+D3 Using a route I already know,rc_familiar,rc_familiar,matrix,2,Slightly
+D3 Using a route I already know,rc_familiar,rc_familiar,matrix,3,Moderately
+D3 Using a route I already know,rc_familiar,rc_familiar,matrix,4,Very much
+D3 Using a route I already know,rc_familiar,rc_familiar,matrix,5,Completely
+"D3 Moving towards highly visible, open spaces",rc_visible,env_visibility,matrix,1,Not at all
+"D3 Moving towards highly visible, open spaces",rc_visible,env_visibility,matrix,2,Slightly
+"D3 Moving towards highly visible, open spaces",rc_visible,env_visibility,matrix,3,Moderately
+"D3 Moving towards highly visible, open spaces",rc_visible,env_visibility,matrix,4,Very much
+"D3 Moving towards highly visible, open spaces",rc_visible,env_visibility,matrix,5,Completely
+D3 Being drawn to places where people are,rc_people,env_attraction_people,matrix,1,Not at all
+D3 Being drawn to places where people are,rc_people,env_attraction_people,matrix,2,Slightly
+D3 Being drawn to places where people are,rc_people,env_attraction_people,matrix,3,Moderately
+D3 Being drawn to places where people are,rc_people,env_attraction_people,matrix,4,Very much
+D3 Being drawn to places where people are,rc_people,env_attraction_people,matrix,5,Completely
+D4 Change your route on the way when a path is blocked or busy,env_reroute,rc_rerouting,matrix,1,Never
+D4 Change your route on the way when a path is blocked or busy,env_reroute,rc_rerouting,matrix,2,Rarely
+D4 Change your route on the way when a path is blocked or busy,env_reroute,rc_rerouting,matrix,3,Sometimes
+D4 Change your route on the way when a path is blocked or busy,env_reroute,rc_rerouting,matrix,4,Often
+D4 Change your route on the way when a path is blocked or busy,env_reroute,rc_rerouting,matrix,5,Always
+D4 Keep your distance from others or avoid crowded paths,env_avoid,env_crowd_avoid,matrix,1,Never
+D4 Keep your distance from others or avoid crowded paths,env_avoid,env_crowd_avoid,matrix,2,Rarely
+D4 Keep your distance from others or avoid crowded paths,env_avoid,env_crowd_avoid,matrix,3,Sometimes
+D4 Keep your distance from others or avoid crowded paths,env_avoid,env_crowd_avoid,matrix,4,Often
+D4 Keep your distance from others or avoid crowded paths,env_avoid,env_crowd_avoid,matrix,5,Always
+D4 Follow the flow of other people walking the same way,env_follow,env_herding,matrix,1,Never
+D4 Follow the flow of other people walking the same way,env_follow,env_herding,matrix,2,Rarely
+D4 Follow the flow of other people walking the same way,env_follow,env_herding,matrix,3,Sometimes
+D4 Follow the flow of other people walking the same way,env_follow,env_herding,matrix,4,Often
+D4 Follow the flow of other people walking the same way,env_follow,env_herding,matrix,5,Always
+D5,wrong_turns_10,wrong_turns_per_10_walks,number,(number),walks out of 10
+D6,wrong_turns_lm_10,wrong_turns_per_10_walks_landmark,number,(number),walks out of 10
+D7,detour_min,detour_tolerance_min,number,(number),minutes
+D8,crowd_people,crowd_threshold_people,number,(number),people
+D9,crowd_delay_min,crowd_slowdown_min,number,(number),minutes
+E per walk,walk_time_most,walk_start_time,per-walk dropdown,05:00,05:00 – 05:30
+E per walk,walk_time_most,walk_start_time,per-walk dropdown,05:30,05:30 – 06:00
+E per walk,walk_time_most,walk_start_time,per-walk dropdown,06:00,06:00 – 06:30
+E per walk,walk_time_most,walk_start_time,per-walk dropdown,06:30,06:30 – 07:00
+E per walk,walk_time_most,walk_start_time,per-walk dropdown,07:00,07:00 – 07:30
+E per walk,walk_time_most,walk_start_time,per-walk dropdown,07:30,07:30 – 08:00
+E per walk,walk_time_most,walk_start_time,per-walk dropdown,08:00,08:00 – 08:30
+E per walk,walk_time_most,walk_start_time,per-walk dropdown,08:30,08:30 – 09:00
+E per walk,walk_time_most,walk_start_time,per-walk dropdown,09:00,09:00 – 09:30
+E per walk,walk_time_most,walk_start_time,per-walk dropdown,09:30,09:30 – 10:00
+E per walk,walk_time_most,walk_start_time,per-walk dropdown,10:00,10:00 – 10:30
+E per walk,walk_time_most,walk_start_time,per-walk dropdown,10:30,10:30 – 11:00
+E per walk,walk_time_most,walk_start_time,per-walk dropdown,11:00,11:00 – 11:30
+E per walk,walk_time_most,walk_start_time,per-walk dropdown,11:30,11:30 – 12:00
+E per walk,walk_time_most,walk_start_time,per-walk dropdown,12:00,12:00 – 12:30
+E per walk,walk_time_most,walk_start_time,per-walk dropdown,12:30,12:30 – 13:00
+E per walk,walk_time_most,walk_start_time,per-walk dropdown,13:00,13:00 – 13:30
+E per walk,walk_time_most,walk_start_time,per-walk dropdown,13:30,13:30 – 14:00
+E per walk,walk_time_most,walk_start_time,per-walk dropdown,14:00,14:00 – 14:30
+E per walk,walk_time_most,walk_start_time,per-walk dropdown,14:30,14:30 – 15:00
+E per walk,walk_time_most,walk_start_time,per-walk dropdown,15:00,15:00 – 15:30
+E per walk,walk_time_most,walk_start_time,per-walk dropdown,15:30,15:30 – 16:00
+E per walk,walk_time_most,walk_start_time,per-walk dropdown,16:00,16:00 – 16:30
+E per walk,walk_time_most,walk_start_time,per-walk dropdown,16:30,16:30 – 17:00
+E per walk,walk_time_most,walk_start_time,per-walk dropdown,17:00,17:00 – 17:30
+E per walk,walk_time_most,walk_start_time,per-walk dropdown,17:30,17:30 – 18:00
+E per walk,walk_time_most,walk_start_time,per-walk dropdown,18:00,18:00 – 18:30
+E per walk,walk_time_most,walk_start_time,per-walk dropdown,18:30,18:30 – 19:00
+E per walk,walk_time_most,walk_start_time,per-walk dropdown,19:00,19:00 – 19:30
+E per walk,walk_time_most,walk_start_time,per-walk dropdown,19:30,19:30 – 20:00
+E per walk,walk_time_most,walk_start_time,per-walk dropdown,20:00,20:00 – 20:30
+E per walk,walk_time_most,walk_start_time,per-walk dropdown,20:30,20:30 – 21:00
+E per walk,walk_time_most,walk_start_time,per-walk dropdown,21:00,21:00 – 21:30
+E per walk,walk_time_most,walk_start_time,per-walk dropdown,21:30,21:30 – 22:00
+E per walk,walk_time_most,walk_start_time,per-walk dropdown,22:00,22:00 – 22:30
+E per walk,walk_time_most,walk_start_time,per-walk dropdown,22:30,22:30 – 23:00
+E per walk,walk_knowledge_most,walk_knowledge_strategy,per-walk radio,landmark,I followed landmarks I recognise along the way
+E per walk,walk_knowledge_most,walk_knowledge_strategy,per-walk radio,route,I know the sequence of turns by heart
+E per walk,walk_knowledge_most,walk_knowledge_strategy,per-walk radio,survey,I picture the campus layout like a map in my head
+E per walk,walk_knowledge_most,walk_knowledge_strategy,per-walk radio,aided,"I followed signs, a map or other people"
+E per walk,walk_choice_most,walk_route_choice,per-walk radio,distance,It is the shortest distance
+E per walk,walk_choice_most,walk_route_choice,per-walk radio,least_angle,It keeps the straightest direction
+E per walk,walk_choice_most,walk_route_choice,per-walk radio,fewest_turns,It has the fewest turns
+E per walk,walk_choice_most,walk_route_choice,per-walk radio,comfort,It is shaded and comfortable to walk
+E per walk,walk_choice_most,walk_route_choice,per-walk radio,safety,It feels safe
+E per walk,walk_choice_most,walk_route_choice,per-walk radio,scenery,It has pleasant views and greenery
+E per walk,walk_choice_most,walk_route_choice,per-walk radio,purpose,It passes places I need for work or study
+E per walk,walk_choice_most,walk_route_choice,per-walk radio,familiar,It is the route I already know
+E per walk,walk_choice_most,walk_route_choice,per-walk radio,adaptive,It changes depending on the situation
+E per walk,walk_crowd_most,walk_env_response,per-walk radio,keep,I keep to my route and walk through
+E per walk,walk_crowd_most,walk_env_response,per-walk radio,avoid,I keep my distance or take another path to avoid the crowd
+E per walk,walk_crowd_most,walk_env_response,per-walk radio,follow,I follow the flow of other people
+E per walk,walk_crowd_most,walk_env_response,per-walk radio,open,I move towards open spaces where I can see ahead
+path rating,mean_pleasant,,path rating,1,Strongly disagree
+path rating,mean_pleasant,,path rating,2,Disagree
+path rating,mean_pleasant,,path rating,3,Neither agree nor disagree
+path rating,mean_pleasant,,path rating,4,Agree
+path rating,mean_pleasant,,path rating,5,Strongly agree
+path rating,mean_memorable,,path rating,1,Strongly disagree
+path rating,mean_memorable,,path rating,2,Disagree
+path rating,mean_memorable,,path rating,3,Neither agree nor disagree
+path rating,mean_memorable,,path rating,4,Agree
+path rating,mean_memorable,,path rating,5,Strongly agree
+path rating,mean_comfort,,path rating,1,Strongly disagree
+path rating,mean_comfort,,path rating,2,Disagree
+path rating,mean_comfort,,path rating,3,Neither agree nor disagree
+path rating,mean_comfort,,path rating,4,Agree
+path rating,mean_comfort,,path rating,5,Strongly agree
+path rating,mean_safe,,path rating,1,Strongly disagree
+path rating,mean_safe,,path rating,2,Disagree
+path rating,mean_safe,,path rating,3,Neither agree nor disagree
+path rating,mean_safe,,path rating,4,Agree
+path rating,mean_safe,,path rating,5,Strongly agree
