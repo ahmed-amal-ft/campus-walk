@@ -1,6 +1,6 @@
 {
  "format": "campus-q-1",
- "version": "3.0",
+ "version": "4.0",
  "settings": {
   "title": "Campus walks",
   "subtitle": "How do you see, understand and move around campus?",
@@ -126,10 +126,6 @@
        "value": "ug"
       },
       {
-       "label": "Postgraduate student",
-       "value": "pg"
-      },
-      {
        "label": "Academic staff",
        "value": "academic"
       },
@@ -188,76 +184,6 @@
        "q": "role",
        "op": "eq",
        "value": "ug"
-      }
-     ],
-     "match": "all"
-    },
-    {
-     "id": "qygsp1y5",
-     "name": "pg_level",
-     "nameAuto": false,
-     "code": "A5",
-     "type": "radio",
-     "title": "Which postgraduate programme are you in?",
-     "description": "",
-     "required": true,
-     "agent": "role_subtype",
-     "options": [
-      {
-       "label": "Diploma",
-       "value": "diploma"
-      },
-      {
-       "label": "Master's",
-       "value": "masters"
-      },
-      {
-       "label": "PhD",
-       "value": "phd"
-      }
-     ],
-     "allowOther": false,
-     "otherLabel": "Other",
-     "layout": "list",
-     "randomize": false,
-     "conditions": [
-      {
-       "q": "role",
-       "op": "eq",
-       "value": "pg"
-      }
-     ],
-     "match": "all"
-    },
-    {
-     "id": "qeoyk0y6",
-     "name": "pg_phase",
-     "nameAuto": false,
-     "code": "A6",
-     "type": "radio",
-     "title": "Where are you in your postgraduate studies?",
-     "description": "",
-     "required": true,
-     "agent": "pg_phase",
-     "options": [
-      {
-       "label": "Mostly taking courses",
-       "value": "coursework"
-      },
-      {
-       "label": "Mostly research or thesis",
-       "value": "research"
-      }
-     ],
-     "allowOther": false,
-     "otherLabel": "Other",
-     "layout": "list",
-     "randomize": false,
-     "conditions": [
-      {
-       "q": "role",
-       "op": "eq",
-       "value": "pg"
       }
      ],
      "match": "all"
@@ -20405,10 +20331,11 @@
   }
  },
  "mig9": true,
- "savedAt": "2026-11-17T20:23:27.795Z",
+ "savedAt": "2026-11-17T20:23:36.000Z",
  "mig_noLrs": true,
  "mig_mapAcc": true,
  "mig_mapAcc1": true,
  "mig_colorQs": true,
- "mig_enhanceOpt": true
+ "mig_enhanceOpt": true,
+ "mig_noPg": true
 }

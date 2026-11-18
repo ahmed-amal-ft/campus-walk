@@ -8,7 +8,6 @@ A1,age,age_group,radio,50plus,Over 50
 A2,sex,sex,radio,f,Female
 A2,sex,sex,radio,m,Male
 A3,role,role,radio,ug,Undergraduate student
-A3,role,role,radio,pg,Postgraduate student
 A3,role,role,radio,academic,Academic staff
 A3,role,role,radio,staff,Administrative or support staff
 A3,role,role,radio,visitor,Visitor
@@ -17,11 +16,6 @@ A4,ug_stage,role_subtype,radio,y2,Sophomore: 2nd year
 A4,ug_stage,role_subtype,radio,y3,Junior: 3rd year
 A4,ug_stage,role_subtype,radio,y4,Senior: 4th year
 A4,ug_stage,role_subtype,radio,y5,5th year or above
-A5,pg_level,role_subtype,radio,diploma,Diploma
-A5,pg_level,role_subtype,radio,masters,Master's
-A5,pg_level,role_subtype,radio,phd,PhD
-A6,pg_phase,pg_phase,radio,coursework,Mostly taking courses
-A6,pg_phase,pg_phase,radio,research,Mostly research or thesis
 A7,academic_rank,role_subtype,radio,ta,Teaching assistant or demonstrator
 A7,academic_rank,role_subtype,radio,al,Assistant lecturer
 A7,academic_rank,role_subtype,radio,lecturer,Lecturer or assistant professor
