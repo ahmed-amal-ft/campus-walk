@@ -21,6 +21,9 @@ A7,academic_rank,role_subtype,radio,al,Assistant lecturer
 A7,academic_rank,role_subtype,radio,lecturer,Lecturer or assistant professor
 A7,academic_rank,role_subtype,radio,assoc,Associate professor
 A7,academic_rank,role_subtype,radio,prof,Professor
+A7,academic_rank,role_subtype,radio,ptb,Part-timer (Bsc.)
+A7,academic_rank,role_subtype,radio,ptm,Part-timer (Msc.)
+A7,academic_rank,role_subtype,radio,ptp,part-timer (PhD
 A8,staff_type,role_subtype,radio,office,Office or administrative work
 A8,staff_type,role_subtype,radio,technical,Technical or laboratory work
 A8,staff_type,role_subtype,radio,facilities,"Facilities, maintenance or cleaning"

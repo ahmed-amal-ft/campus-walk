@@ -141,7 +141,8 @@
      "allowOther": false,
      "otherLabel": "Other",
      "layout": "list",
-     "randomize": false
+     "randomize": false,
+     "conditions": []
     },
     {
      "id": "qgehmbe4",
@@ -218,6 +219,18 @@
       {
        "label": "Professor",
        "value": "prof"
+      },
+      {
+       "label": "Part-timer (Bsc.)",
+       "value": "ptb"
+      },
+      {
+       "label": "Part-timer (Msc.)",
+       "value": "ptm"
+      },
+      {
+       "label": "part-timer (PhD",
+       "value": "ptp"
       }
      ],
      "allowOther": false,
@@ -20331,7 +20344,7 @@
   }
  },
  "mig9": true,
- "savedAt": "2026-11-17T20:23:36.000Z",
+ "savedAt": "2026-11-18T20:19:30.382Z",
  "mig_noLrs": true,
  "mig_mapAcc": true,
  "mig_mapAcc1": true,
