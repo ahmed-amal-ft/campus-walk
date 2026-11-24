@@ -100,8 +100,6 @@ S2,when_you_go_from_el_mahmoudi,,radio,s2_dontknow,I don't Know
 S3,below_are_five_maps_of_the_r,,radio,s3_a,Map A
 S3,below_are_five_maps_of_the_r,,radio,s3_b,Map B
 S3,below_are_five_maps_of_the_r,,radio,s3_c,Map C
-S3,below_are_five_maps_of_the_r,,radio,s3_d,Map D
-S3,below_are_five_maps_of_the_r,,radio,s3_e,Map E
 entry_gate,which_gate_you_use_to_enter_,,radio,enter_gate1,Main Gate 1
 entry_gate,which_gate_you_use_to_enter_,,radio,enter_gate2,Gate 2 (El Mahmoudiya  Gate 2)
 entry_gate,which_gate_you_use_to_enter_,,radio,enter_gate3,Gate 3 (El Mahmoudiya  Gate 3)
