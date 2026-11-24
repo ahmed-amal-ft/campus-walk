@@ -19,41 +19,50 @@ A4,ug_stage,role_subtype,radio,y4,Senior: 4th year
 A4,ug_stage,role_subtype,radio,y5,5th year or above
 A5,residence,residence,radio,nonres,Non-resident student (I come to campus)
 A5,residence,residence,radio,res,Resident student (I live on campus)
-A6,commute_mode,commute_mode,radio,car,Car
-A6,commute_mode,commute_mode,radio,bus,College bus
-A6,commute_mode,commute_mode,radio,public,Public transport
-A6,commute_mode,commute_mode,radio,taxi,Taxi
-A6,commute_mode,commute_mode,radio,toktok,Toktok
+A6,commute_mode,commute_mode,radio,come_car,Car
+A6,commute_mode,commute_mode,radio,come_bus,College bus
+A6,commute_mode,commute_mode,radio,come_public,Public transport
+A6,commute_mode,commute_mode,radio,come_taxi,Taxi
+A6,commute_mode,commute_mode,radio,come_toktok,Toktok
+A6,commute_mode,commute_mode,radio,come_onfoot,On foot
 A6,commute_mode,commute_mode,radio,other,Other (for example on foot)
-A12,days_per_week,visit_frequency,radio,d0,Less than once a week
-A12,days_per_week,visit_frequency,radio,d1,1 day
-A12,days_per_week,visit_frequency,radio,d2,2 to 3 days
-A12,days_per_week,visit_frequency,radio,d4,4 to 5 days
-A12,days_per_week,visit_frequency,radio,d6,6 to 7 days
-A7,academic_rank,role_subtype,radio,ta,Teaching assistant or demonstrator
-A7,academic_rank,role_subtype,radio,al,Assistant lecturer
-A7,academic_rank,role_subtype,radio,lecturer,Lecturer or assistant professor
-A7,academic_rank,role_subtype,radio,assoc,Associate professor
-A7,academic_rank,role_subtype,radio,prof,Professor
-A7,academic_rank,role_subtype,radio,ptb,Part-timer (Bsc.)
-A7,academic_rank,role_subtype,radio,ptm,Part-timer (Msc.)
-A7,academic_rank,role_subtype,radio,ptp,part-timer (PhD)
-A8,staff_type,role_subtype,radio,office,Office or administrative work
-A8,staff_type,role_subtype,radio,technical,Technical or laboratory work
-A8,staff_type,role_subtype,radio,facilities,"Facilities, maintenance or cleaning"
-A8,staff_type,role_subtype,radio,security,Security
-A8,staff_type,role_subtype,radio,service,Food or retail service
-A9,visit_purpose,role_subtype,radio,prospective,Prospective student or family
-A9,visit_purpose,role_subtype,radio,event,"Event, conference or exhibition"
-A9,visit_purpose,role_subtype,radio,business,Business or meeting
-A9,visit_purpose,role_subtype,radio,service,"A service (office, clinic, bank)"
-A9,visit_purpose,role_subtype,radio,companion,Accompanying someone
-A10,qualification,education,radio,secondary,Secondary school or equivalent
-A10,qualification,education,radio,diploma,Diploma
-A10,qualification,education,radio,bachelor,Bachelor's degree
-A10,qualification,education,radio,master,Master's degree
-A10,qualification,education,radio,doctorate,Doctorate
-A11,main_faculty,main_faculty,text,(text),free text
+A7,how_do_you_leave_aast_campus,,radio,leave_car,Car
+A7,how_do_you_leave_aast_campus,,radio,leave_cbus,College bus
+A7,how_do_you_leave_aast_campus,,radio,leave_pub,Public transport
+A7,how_do_you_leave_aast_campus,,radio,leave_taxi,Taxi
+A7,how_do_you_leave_aast_campus,,radio,leave_toktok,Toktok
+A7,how_do_you_leave_aast_campus,,radio,leave_foot,On foot
+A7,how_do_you_leave_aast_campus,,radio,leave_rhcar,Ride-hailing (Uber-Careem or any similar to them)
+A7,how_do_you_leave_aast_campus,,radio,leave_rhbus,Ride-hailing (SWVL or any similar to it)
+A8,days_per_week,visit_frequency,radio,d0,Less than once a week
+A8,days_per_week,visit_frequency,radio,d1,1 day
+A8,days_per_week,visit_frequency,radio,d2,2 to 3 days
+A8,days_per_week,visit_frequency,radio,d4,4 to 5 days
+A8,days_per_week,visit_frequency,radio,d6,6 to 7 days
+A9,academic_rank,role_subtype,radio,ta,Teaching assistant or demonstrator
+A9,academic_rank,role_subtype,radio,al,Assistant lecturer
+A9,academic_rank,role_subtype,radio,lecturer,Lecturer or assistant professor
+A9,academic_rank,role_subtype,radio,assoc,Associate professor
+A9,academic_rank,role_subtype,radio,prof,Professor
+A9,academic_rank,role_subtype,radio,ptb,Part-timer (Bsc.)
+A9,academic_rank,role_subtype,radio,ptm,Part-timer (Msc.)
+A9,academic_rank,role_subtype,radio,ptp,part-timer (PhD)
+A10,staff_type,role_subtype,radio,office,Office or administrative work
+A10,staff_type,role_subtype,radio,technical,Technical or laboratory work
+A10,staff_type,role_subtype,radio,facilities,"Facilities, maintenance or cleaning"
+A10,staff_type,role_subtype,radio,security,Security
+A10,staff_type,role_subtype,radio,service,Food or retail service
+A11,visit_purpose,role_subtype,radio,prospective,Prospective student or family
+A11,visit_purpose,role_subtype,radio,event,"Event, conference or exhibition"
+A11,visit_purpose,role_subtype,radio,business,Business or meeting
+A11,visit_purpose,role_subtype,radio,service,"A service (office, clinic, bank)"
+A11,visit_purpose,role_subtype,radio,companion,Accompanying someone
+A12,qualification,education,radio,secondary,Secondary school or equivalent
+A12,qualification,education,radio,diploma,Diploma
+A12,qualification,education,radio,bachelor,Bachelor's degree
+A12,qualification,education,radio,master,Master's degree
+A12,qualification,education,radio,doctorate,Doctorate
+A13,main_faculty,main_faculty,text,(text),free text
 L1,what_is_this_building_called,,radio,l1_pl,Planetarium
 L1,what_is_this_building_called,,radio,l1_wo,Workshop
 L1,what_is_this_building_called,,radio,l1_int_sim,Integrated Simulator Complex
@@ -93,6 +102,12 @@ S3,below_are_five_maps_of_the_r,,radio,s3_b,Map B
 S3,below_are_five_maps_of_the_r,,radio,s3_c,Map C
 S3,below_are_five_maps_of_the_r,,radio,s3_d,Map D
 S3,below_are_five_maps_of_the_r,,radio,s3_e,Map E
+entry_gate,which_gate_you_use_to_enter_,,radio,enter_gate1,Main Gate 1
+entry_gate,which_gate_you_use_to_enter_,,radio,enter_gate2,Gate 2 (El Mahmoudiya  Gate 2)
+entry_gate,which_gate_you_use_to_enter_,,radio,enter_gate3,Gate 3 (El Mahmoudiya  Gate 3)
+exit_gate,which_gate_you_use_to_leave_,,radio,exit_gate1,Main Gate 1
+exit_gate,which_gate_you_use_to_leave_,,radio,exit_gate2,Gate 2 (El Mahmoudiya  Gate 2)
+exit_gate,which_gate_you_use_to_leave_,,radio,exit_gate3,Gate 3 (El Mahmoudiya  Gate 3)
 B1 per walk,walk_time_most,walk_start_time,per-walk dropdown,05:00,05:00 – 05:30
 B1 per walk,walk_time_most,walk_start_time,per-walk dropdown,05:30,05:30 – 06:00
 B1 per walk,walk_time_most,walk_start_time,per-walk dropdown,06:00,06:00 – 06:30
