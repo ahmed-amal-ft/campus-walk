@@ -27,7 +27,6 @@ A6,commute_mode,commute_mode,radio,come_toktok,Toktok
 A6,commute_mode,commute_mode,radio,come_onfoot,On foot
 A6,commute_mode,commute_mode,radio,come_rhcar,Ride-hailing (Uber-Careem or any similar to them)
 A6,commute_mode,commute_mode,radio,come_rhbus,Ride-hailing (SWVL or any similar to it)
-A6,commute_mode,commute_mode,radio,other,Other (for example on foot)
 A7,how_do_you_leave_aast_campus,,radio,leave_car,Car
 A7,how_do_you_leave_aast_campus,,radio,leave_cbus,College bus
 A7,how_do_you_leave_aast_campus,,radio,leave_pub,Public transport

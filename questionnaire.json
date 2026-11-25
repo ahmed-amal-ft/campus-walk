@@ -270,7 +270,7 @@
        "value": "come_rhbus"
       }
      ],
-     "allowOther": true,
+     "allowOther": false,
      "otherLabel": "Other (for example on foot)",
      "layout": "list",
      "randomize": false,
@@ -20884,7 +20884,7 @@
   }
  },
  "mig9": true,
- "savedAt": "2026-11-25T01:15:45.858Z",
+ "savedAt": "2026-11-25T01:23:30.528Z",
  "mig_noLrs": true,
  "mig_mapAcc": true,
  "mig_mapAcc1": true,
