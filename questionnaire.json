@@ -1056,26 +1056,10 @@
   {
    "id": "pzo260sv",
    "title": "B. Your walks",
-   "description": "In this section it is required to draw your walks (route) on the map, each route you would draw consists of a set of paths (segments); for each route, two paths are required to be rated in each route.\nYou are kindly required to draw and rate 3 routes that represent your start, middle, and end of day walks.\n",
+   "description": "In this section it is required to draw your walks (route) on the map, each walk you would draw consists of a set of paths (segments); You are required to draw your walks in AAST campus in 3 periods:\n\n**Start of Day  -----  from 8:15 to 10:30 am**\n**Middle of Day  ---  from 10:31 am to 2:10 pm**\n**End of Day  ------  from 2:11 pm to 4:30 pm**\n\nEach walk would require the following steps:\n1. Start by clicking a starting circle (origin) and then select an end circle (destination) \n2. Select landmark(s) you rely on during your walk by clicking of its Star\n3. Answer few questions considering your walk ",
    "conditions": [],
    "match": "all",
    "questions": [
-    {
-     "id": "qyl6rjx9",
-     "name": "",
-     "nameAuto": true,
-     "code": "",
-     "type": "info",
-     "title": "",
-     "description": "Kindly consider periods of day on campus as follows: \nStart of Day  ---  from 8:15 to 10:30 am \nMiddle of Day  ---  from 10:31 am to 2:10 pm\nEnd of Day  ---  from 2:11 pm to 4:30 pm",
-     "required": false,
-     "agent": "",
-     "bold": true,
-     "imageUrl": "",
-     "imageAlt": "",
-     "imageCaption": "",
-     "conditions": []
-    },
     {
      "id": "ql7og1uf",
      "name": "walks",
@@ -20884,7 +20868,7 @@
   }
  },
  "mig9": true,
- "savedAt": "2026-11-25T01:23:30.528Z",
+ "savedAt": "2026-11-25T09:44:45.091Z",
  "mig_noLrs": true,
  "mig_mapAcc": true,
  "mig_mapAcc1": true,
