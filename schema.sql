@@ -466,7 +466,8 @@ insert into public."campus_walks_segments" values
 ('Teu', '3ECE', 'N226', 11.4, 'path', '', 'Teu', '1050.53 713.5, 1061.92 714.04', '1061.92 714.04, 1050.53 713.5', '1061.92 714.04', '1050.53 713.5', 'LINESTRING(1050.53 713.5, 1061.92 714.04)'),
 ('th1', 'N224', 'N227', 11.7, 'path', '', 'th1', '1120.49 592.46, 1123.55 581.14', '1123.55 581.14, 1120.49 592.46', '1123.55 581.14', '1120.49 592.46', 'LINESTRING(1120.49 592.46, 1123.55 581.14)');
 insert into public."campus_walks_segments" values
-('th2', 'N227', 'N191', 18, 'path', '', 'th2', '1123.55 581.14, 1140.37 574.8', '1140.37 574.8, 1123.55 581.14', '1140.37 574.8', '1123.55 581.14', 'LINESTRING(1123.55 581.14, 1140.37 574.8)');
+('th2', 'N227', 'N191', 18, 'path', '', 'th2', '1123.55 581.14, 1140.37 574.8', '1140.37 574.8, 1123.55 581.14', '1140.37 574.8', '1123.55 581.14', 'LINESTRING(1123.55 581.14, 1140.37 574.8)'),
+('En1', '3EC8', 'N228', 15.1, 'path', '', 'En1', '888.96 699.05, 888.42 714.12', '888.42 714.12, 888.96 699.05', '888.42 714.12', '888.96 699.05', 'LINESTRING(888.96 699.05, 888.42 714.12)');
 drop table if exists public."campus_walks_places" cascade;
 create table public."campus_walks_places" (place_id text primary key, place_name text, place_type text, node_id text, origin_destination boolean, landmark boolean, entity_hand text, wkt text);
 insert into public."campus_walks_places" values
