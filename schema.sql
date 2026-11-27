@@ -529,7 +529,7 @@ insert into public."campus_walks_places" values
 ('4CDB', '', '', '4CDB', true, false, '4CDB', 'POINT(815.78 444.81)'),
 ('4D63', '', '', '4D63', true, false, '4D63', 'POINT(829.7 608.21)'),
 ('4DEA', '', '', '4DEA', true, false, '4DEA', 'POINT(946.69 701.04)'),
-('5056', '', '', '5056', true, false, '5056', 'POINT(793.76 592.92)'),
+('5056', '', '', '5056', true, false, '5056', 'POINT(788.86 592.69)'),
 ('51A7', '', '', '51A7', true, false, '51A7', 'POINT(1025.90 754.57)'),
 ('52FB', '', '', '52FB', true, false, '52FB', 'POINT(601.53 707.62)'),
 ('3EC515', '', '', '3EC515', true, false, '3EC515', 'POINT(694.35 432.5)'),

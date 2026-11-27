@@ -1395,7 +1395,11 @@
        "map_skip": "I don't walk on campus at this period"
       },
       "rateSample": "2",
-      "rateLandmarks": true
+      "rateLandmarks": true,
+      "tapDashLen": 1.5,
+      "tapGap": 2,
+      "tapW": 0.7,
+      "badgeR": 2.5
      },
      "conditions": []
     }
@@ -16106,7 +16110,7 @@
    {
     "id": "3EC5",
     "entity_hand": "3EC5",
-    "key": "Lmwwhd82c0:0",
+    "key": "Lmwz8pn210:0",
     "name": "",
     "type": "",
     "x": 396,
@@ -16124,7 +16128,7 @@
    {
     "id": "3EC6",
     "entity_hand": "3EC6",
-    "key": "Lmwwhd82c0:1",
+    "key": "Lmwz8pn210:1",
     "name": "",
     "type": "",
     "x": 442.7,
@@ -16142,7 +16146,7 @@
    {
     "id": "3EC7",
     "entity_hand": "3EC7",
-    "key": "Lmwwhd82c0:2",
+    "key": "Lmwz8pn210:2",
     "name": "",
     "type": "",
     "x": 455.4,
@@ -16160,7 +16164,7 @@
    {
     "id": "3EC8",
     "entity_hand": "3EC8",
-    "key": "Lmwwhd82c0:3",
+    "key": "Lmwz8pn210:3",
     "name": "",
     "type": "",
     "x": 477.9,
@@ -16178,7 +16182,7 @@
    {
     "id": "3EC9",
     "entity_hand": "3EC9",
-    "key": "Lmwwhd82c0:4",
+    "key": "Lmwz8pn210:4",
     "name": "",
     "type": "",
     "x": 410,
@@ -16196,7 +16200,7 @@
    {
     "id": "3ECA",
     "entity_hand": "3ECA",
-    "key": "Lmwwhd82c0:5",
+    "key": "Lmwz8pn210:5",
     "name": "",
     "type": "",
     "x": 567,
@@ -16214,7 +16218,7 @@
    {
     "id": "3ECB",
     "entity_hand": "3ECB",
-    "key": "Lmwwhd82c0:6",
+    "key": "Lmwz8pn210:6",
     "name": "",
     "type": "",
     "x": 657,
@@ -16232,7 +16236,7 @@
    {
     "id": "3ECC",
     "entity_hand": "3ECC",
-    "key": "Lmwwhd82c0:7",
+    "key": "Lmwz8pn210:7",
     "name": "",
     "type": "",
     "x": 826.5,
@@ -16250,7 +16254,7 @@
    {
     "id": "3ECD",
     "entity_hand": "3ECD",
-    "key": "Lmwwhd82c0:8",
+    "key": "Lmwz8pn210:8",
     "name": "",
     "type": "",
     "x": 790.4,
@@ -16268,7 +16272,7 @@
    {
     "id": "3ECE",
     "entity_hand": "3ECE",
-    "key": "Lmwwhd82c0:9",
+    "key": "Lmwz8pn210:9",
     "name": "",
     "type": "",
     "x": 689.2,
@@ -16286,7 +16290,7 @@
    {
     "id": "3ECF",
     "entity_hand": "3ECF",
-    "key": "Lmwwhd82c0:10",
+    "key": "Lmwz8pn210:10",
     "name": "",
     "type": "",
     "x": 252,
@@ -16304,7 +16308,7 @@
    {
     "id": "3ED0",
     "entity_hand": "3ED0",
-    "key": "Lmwwhd82c0:11",
+    "key": "Lmwz8pn210:11",
     "name": "",
     "type": "",
     "x": 67.1,
@@ -16322,7 +16326,7 @@
    {
     "id": "3ED1",
     "entity_hand": "3ED1",
-    "key": "Lmwwhd82c0:12",
+    "key": "Lmwz8pn210:12",
     "name": "",
     "type": "",
     "x": 954.9,
@@ -16340,7 +16344,7 @@
    {
     "id": "3ED2",
     "entity_hand": "3ED2",
-    "key": "Lmwwhd82c0:13",
+    "key": "Lmwz8pn210:13",
     "name": "",
     "type": "",
     "x": 952.8,
@@ -16358,7 +16362,7 @@
    {
     "id": "3F1B",
     "entity_hand": "3F1B",
-    "key": "Lmwwhd82c0:14",
+    "key": "Lmwz8pn210:14",
     "name": "",
     "type": "",
     "x": 624,
@@ -16376,7 +16380,7 @@
    {
     "id": "40BA",
     "entity_hand": "40BA",
-    "key": "Lmwwhd82c0:15",
+    "key": "Lmwz8pn210:15",
     "name": "",
     "type": "",
     "x": 165.2,
@@ -16394,7 +16398,7 @@
    {
     "id": "40BB",
     "entity_hand": "40BB",
-    "key": "Lmwwhd82c0:16",
+    "key": "Lmwz8pn210:16",
     "name": "",
     "type": "",
     "x": 144.8,
@@ -16412,7 +16416,7 @@
    {
     "id": "40BC",
     "entity_hand": "40BC",
-    "key": "Lmwwhd82c0:17",
+    "key": "Lmwz8pn210:17",
     "name": "",
     "type": "",
     "x": 252.4,
@@ -16430,7 +16434,7 @@
    {
     "id": "40BD",
     "entity_hand": "40BD",
-    "key": "Lmwwhd82c0:18",
+    "key": "Lmwz8pn210:18",
     "name": "",
     "type": "",
     "x": 251.7,
@@ -16448,7 +16452,7 @@
    {
     "id": "4103",
     "entity_hand": "4103",
-    "key": "Lmwwhd82c0:19",
+    "key": "Lmwz8pn210:19",
     "name": "",
     "type": "",
     "x": 221.8,
@@ -16466,7 +16470,7 @@
    {
     "id": "418F",
     "entity_hand": "418F",
-    "key": "Lmwwhd82c0:20",
+    "key": "Lmwz8pn210:20",
     "name": "",
     "type": "",
     "x": 380.9,
@@ -16484,7 +16488,7 @@
    {
     "id": "41D5",
     "entity_hand": "41D5",
-    "key": "Lmwwhd82c0:21",
+    "key": "Lmwz8pn210:21",
     "name": "",
     "type": "",
     "x": 501.6,
@@ -16502,7 +16506,7 @@
    {
     "id": "43F7",
     "entity_hand": "43F7",
-    "key": "Lmwwhd82c0:22",
+    "key": "Lmwz8pn210:22",
     "name": "",
     "type": "",
     "x": 722.7,
@@ -16520,7 +16524,7 @@
    {
     "id": "46DF",
     "entity_hand": "46DF",
-    "key": "Lmwwhd82c0:23",
+    "key": "Lmwz8pn210:23",
     "name": "",
     "type": "",
     "x": 456.1,
@@ -16538,7 +16542,7 @@
    {
     "id": "4725",
     "entity_hand": "4725",
-    "key": "Lmwwhd82c0:24",
+    "key": "Lmwz8pn210:24",
     "name": "",
     "type": "",
     "x": 705.2,
@@ -16556,7 +16560,7 @@
    {
     "id": "476A",
     "entity_hand": "476A",
-    "key": "Lmwwhd82c0:25",
+    "key": "Lmwz8pn210:25",
     "name": "",
     "type": "",
     "x": 847.8,
@@ -16574,7 +16578,7 @@
    {
     "id": "47AE",
     "entity_hand": "47AE",
-    "key": "Lmwwhd82c0:26",
+    "key": "Lmwz8pn210:26",
     "name": "",
     "type": "",
     "x": 888.1,
@@ -16592,7 +16596,7 @@
    {
     "id": "47AF",
     "entity_hand": "47AF",
-    "key": "Lmwwhd82c0:27",
+    "key": "Lmwz8pn210:27",
     "name": "",
     "type": "",
     "x": 888.6,
@@ -16610,7 +16614,7 @@
    {
     "id": "47F3",
     "entity_hand": "47F3",
-    "key": "Lmwwhd82c0:28",
+    "key": "Lmwz8pn210:28",
     "name": "",
     "type": "",
     "x": 175.8,
@@ -16628,7 +16632,7 @@
    {
     "id": "47F4",
     "entity_hand": "47F4",
-    "key": "Lmwwhd82c0:29",
+    "key": "Lmwz8pn210:29",
     "name": "",
     "type": "",
     "x": 269.6,
@@ -16646,7 +16650,7 @@
    {
     "id": "47F5",
     "entity_hand": "47F5",
-    "key": "Lmwwhd82c0:30",
+    "key": "Lmwz8pn210:30",
     "name": "",
     "type": "",
     "x": 192.4,
@@ -16664,7 +16668,7 @@
    {
     "id": "487E",
     "entity_hand": "487E",
-    "key": "Lmwwhd82c0:31",
+    "key": "Lmwz8pn210:31",
     "name": "",
     "type": "",
     "x": 724.7,
@@ -16682,7 +16686,7 @@
    {
     "id": "487F",
     "entity_hand": "487F",
-    "key": "Lmwwhd82c0:32",
+    "key": "Lmwz8pn210:32",
     "name": "",
     "type": "",
     "x": 920,
@@ -16700,7 +16704,7 @@
    {
     "id": "48C5",
     "entity_hand": "48C5",
-    "key": "Lmwwhd82c0:33",
+    "key": "Lmwz8pn210:33",
     "name": "",
     "type": "",
     "x": 817.7,
@@ -16718,7 +16722,7 @@
    {
     "id": "48C6",
     "entity_hand": "48C6",
-    "key": "Lmwwhd82c0:34",
+    "key": "Lmwz8pn210:34",
     "name": "",
     "type": "",
     "x": 778,
@@ -16736,7 +16740,7 @@
    {
     "id": "48C9",
     "entity_hand": "48C9",
-    "key": "Lmwwhd82c0:35",
+    "key": "Lmwz8pn210:35",
     "name": "",
     "type": "",
     "x": 867.2,
@@ -16754,7 +16758,7 @@
    {
     "id": "4996",
     "entity_hand": "4996",
-    "key": "Lmwwhd82c0:36",
+    "key": "Lmwz8pn210:36",
     "name": "",
     "type": "",
     "x": 492,
@@ -16772,7 +16776,7 @@
    {
     "id": "49DB",
     "entity_hand": "49DB",
-    "key": "Lmwwhd82c0:37",
+    "key": "Lmwz8pn210:37",
     "name": "",
     "type": "",
     "x": 382.7,
@@ -16790,7 +16794,7 @@
    {
     "id": "49DC",
     "entity_hand": "49DC",
-    "key": "Lmwwhd82c0:38",
+    "key": "Lmwz8pn210:38",
     "name": "",
     "type": "",
     "x": 323.4,
@@ -16808,7 +16812,7 @@
    {
     "id": "4A27",
     "entity_hand": "4A27",
-    "key": "Lmwwhd82c0:39",
+    "key": "Lmwz8pn210:39",
     "name": "",
     "type": "",
     "x": 434.7,
@@ -16826,7 +16830,7 @@
    {
     "id": "4B79",
     "entity_hand": "4B79",
-    "key": "Lmwwhd82c0:40",
+    "key": "Lmwz8pn210:40",
     "name": "",
     "type": "",
     "x": 930,
@@ -16844,7 +16848,7 @@
    {
     "id": "4B7A",
     "entity_hand": "4B7A",
-    "key": "Lmwwhd82c0:41",
+    "key": "Lmwz8pn210:41",
     "name": "",
     "type": "",
     "x": 764.8,
@@ -16862,7 +16866,7 @@
    {
     "id": "4BBF",
     "entity_hand": "4BBF",
-    "key": "Lmwwhd82c0:42",
+    "key": "Lmwz8pn210:42",
     "name": "",
     "type": "",
     "x": 613.8,
@@ -16880,7 +16884,7 @@
    {
     "id": "4C03",
     "entity_hand": "4C03",
-    "key": "Lmwwhd82c0:43",
+    "key": "Lmwz8pn210:43",
     "name": "",
     "type": "",
     "x": 525.9,
@@ -16898,7 +16902,7 @@
    {
     "id": "4C04",
     "entity_hand": "4C04",
-    "key": "Lmwwhd82c0:44",
+    "key": "Lmwz8pn210:44",
     "name": "",
     "type": "",
     "x": 445.2,
@@ -16916,7 +16920,7 @@
    {
     "id": "4C05",
     "entity_hand": "4C05",
-    "key": "Lmwwhd82c0:45",
+    "key": "Lmwz8pn210:45",
     "name": "",
     "type": "",
     "x": 445,
@@ -16934,7 +16938,7 @@
    {
     "id": "4C49",
     "entity_hand": "4C49",
-    "key": "Lmwwhd82c0:46",
+    "key": "Lmwz8pn210:46",
     "name": "",
     "type": "",
     "x": 374.7,
@@ -16952,7 +16956,7 @@
    {
     "id": "4C4A",
     "entity_hand": "4C4A",
-    "key": "Lmwwhd82c0:47",
+    "key": "Lmwz8pn210:47",
     "name": "",
     "type": "",
     "x": 325.8,
@@ -16970,7 +16974,7 @@
    {
     "id": "4C4B",
     "entity_hand": "4C4B",
-    "key": "Lmwwhd82c0:48",
+    "key": "Lmwz8pn210:48",
     "name": "",
     "type": "",
     "x": 292.9,
@@ -16988,7 +16992,7 @@
    {
     "id": "4C4C",
     "entity_hand": "4C4C",
-    "key": "Lmwwhd82c0:49",
+    "key": "Lmwz8pn210:49",
     "name": "",
     "type": "",
     "x": 319.6,
@@ -17006,7 +17010,7 @@
    {
     "id": "4C4D",
     "entity_hand": "4C4D",
-    "key": "Lmwwhd82c0:50",
+    "key": "Lmwz8pn210:50",
     "name": "",
     "type": "",
     "x": 357.1,
@@ -17024,7 +17028,7 @@
    {
     "id": "4C4E",
     "entity_hand": "4C4E",
-    "key": "Lmwwhd82c0:51",
+    "key": "Lmwz8pn210:51",
     "name": "",
     "type": "",
     "x": 347.8,
@@ -17042,7 +17046,7 @@
    {
     "id": "4CDB",
     "entity_hand": "4CDB",
-    "key": "Lmwwhd82c0:52",
+    "key": "Lmwz8pn210:52",
     "name": "",
     "type": "",
     "x": 382.2,
@@ -17060,7 +17064,7 @@
    {
     "id": "4D63",
     "entity_hand": "4D63",
-    "key": "Lmwwhd82c0:53",
+    "key": "Lmwz8pn210:53",
     "name": "",
     "type": "",
     "x": 400.4,
@@ -17078,7 +17082,7 @@
    {
     "id": "4DEA",
     "entity_hand": "4DEA",
-    "key": "Lmwwhd82c0:54",
+    "key": "Lmwz8pn210:54",
     "name": "",
     "type": "",
     "x": 553.4,
@@ -17096,25 +17100,25 @@
    {
     "id": "5056",
     "entity_hand": "5056",
-    "key": "Lmwwhd82c0:55",
+    "key": "Lmwz8pn210:55",
     "name": "",
     "type": "",
-    "x": 353.4,
-    "y": 293.2,
+    "x": 347,
+    "y": 293.5,
     "node": "5056",
     "od": true,
     "landmark": false,
-    "seg": "5D43",
+    "seg": "418D",
     "snap_m": 0,
     "src": [
-     793.76,
-     592.92
+     788.86,
+     592.69
     ]
    },
    {
     "id": "51A7",
     "entity_hand": "51A7",
-    "key": "Lmwwhd82c0:56",
+    "key": "Lmwz8pn210:56",
     "name": "",
     "type": "",
     "x": 657,
@@ -17132,7 +17136,7 @@
    {
     "id": "52FB",
     "entity_hand": "52FB",
-    "key": "Lmwwhd82c0:57",
+    "key": "Lmwz8pn210:57",
     "name": "",
     "type": "",
     "x": 102,
@@ -17150,7 +17154,7 @@
    {
     "id": "3EC515",
     "entity_hand": "3EC515",
-    "key": "Lmwwhd82c0:58",
+    "key": "Lmwz8pn210:58",
     "name": "",
     "type": "",
     "x": 223.4,
@@ -17168,7 +17172,7 @@
    {
     "id": "P1",
     "entity_hand": "P1",
-    "key": "Lmwwhd82c0:59",
+    "key": "Lmwz8pn210:59",
     "name": "",
     "type": "",
     "x": 95,
@@ -17186,7 +17190,7 @@
    {
     "id": "pl3131",
     "entity_hand": "pl3131",
-    "key": "Lmwwhd82c0:60",
+    "key": "Lmwz8pn210:60",
     "name": "",
     "type": "",
     "x": 954.4,
@@ -17204,7 +17208,7 @@
    {
     "id": "pl21121",
     "entity_hand": "pl21121",
-    "key": "Lmwwhd82c0:61",
+    "key": "Lmwz8pn210:61",
     "name": "",
     "type": "",
     "x": 304.3,
@@ -21905,8 +21909,8 @@
     "y": 277.3,
     "en": "Registration and Admission Building",
     "ar": "",
-    "dx": -30.3,
-    "dy": -51.2,
+    "dx": -28.5,
+    "dy": -51.4,
     "src": [
      798.5,
      605.08
@@ -22017,11 +22021,11 @@
     "bldg": "#44535a"
    },
    "params": {
-    "segW": 0.8,
-    "routeW": 2,
-    "curW": 1.5,
-    "poiR": 2.1,
-    "poiStroke": 1,
+    "segW": 0.5,
+    "routeW": 0.5,
+    "curW": 0.7,
+    "poiR": 1.2,
+    "poiStroke": 0.4,
     "lmSize": 4.5,
     "lmStrokeW": 1.25,
     "haloW": 0,
@@ -22036,12 +22040,13 @@
     "capWrap": 10,
     "capOp": 0.5,
     "capSize": 8,
-    "north": false
+    "north": false,
+    "showSegIds": false
    }
   }
  },
  "mig9": true,
- "savedAt": "2026-11-27T00:22:07.288Z",
+ "savedAt": "2026-11-27T17:20:02.286Z",
  "mig_noLrs": true,
  "mig_mapAcc": true,
  "mig_mapAcc1": true,
