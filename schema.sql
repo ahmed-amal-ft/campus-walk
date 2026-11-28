@@ -659,7 +659,7 @@ insert into public."campus_walks_landmarks" values
 ('L45', 'Maritime Building C', '', 'L45', 'POINT(1204.98 766.65)'),
 ('L46', 'Maritime Building A', '', 'L46', 'POINT(1200.40 710.91)'),
 ('L47', 'المعهد الإقليمي للأمن البحري', '', 'L47', 'POINT(1180.59 672.21)'),
-('L48', 'L20', '', 'L48', 'POINT(653.75 422.86)'),
+('L48', 'Accomodation Building D', '', 'L48', 'POINT(653.75 422.86)'),
 ('L49', 'Building', '', 'L49', 'POINT(1196.80 586.5)'),
 ('L50', 'إدارة تجديد الشهادات البحرية', '', 'L50', 'POINT(1227.01 580.23)'),
 ('L51', 'smart', '', 'L51', 'POINT(908.07 692.25)');
